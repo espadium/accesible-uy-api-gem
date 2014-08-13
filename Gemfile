@@ -5,3 +5,7 @@ gemspec
 gem 'rubocop'
 gem 'rails_best_practices'
 gem 'reek'
+
+group :development, :test do
+  gem 'rspec'
+end

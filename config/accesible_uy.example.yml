@@ -1,0 +1,11 @@
+development:
+  api_key:    'mykey'
+  api_secret: 'mysecret'
+
+test:
+  api_key:    'mykey'
+  api_secret: 'mysecret'
+
+production:
+  api_key:
+  api_secret:
