@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'accesible_uy'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2014-06-29'
   s.summary     = 'Wrapper for AccesibleUY api'
   s.description = 'Create an app that uses AccesibleUY api!'
@@ -14,7 +14,8 @@ Gem::Specification.new do |s|
   s.email = 'accesibleuy@gmail.com'
   s.files = [
     'lib/accesible_uy.rb',
-    'lib/accesible_uy/configuration.rb',
+    'lib/accesible_uy/configurable.rb',
+    'lib/accesible_uy/client.rb',
     'config/accesible_uy.example.yml'
   ]
   s.homepage = 'http://rubygems.org/gems/accesible_uy'

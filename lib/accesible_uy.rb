@@ -1,11 +1,20 @@
-require 'accesible_uy/configuration'
+require 'accesible_uy/client'
 
-class AccesibleUY
-  def self.hello
-    puts 'Hello world!'
-  end
+module AccesibleUY
+  class << self
+    include AccesibleUY::Configurable
 
-  def self.config
-    Configuration.config
+    def client
+      @client = AccesibleUY::Client.new(options) unless defined?(@client)
+      @client
+    end
+
+    def hello
+      puts 'Hello world!'
+    end
+
+    def config
+      Configuration.config
+    end
   end
 end
